@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Mod | Download Top Mobile Games & MODs</title>
+  <meta name="description" content="Game Mod: Download GTA San Andreas Mobile, CarX Drift Racing 2, Minecraft, and Roblox for Android & iOS. Get the latest games & mods, fast and free!" />
+  <meta name="keywords" content="game mod, mobile games, gta san andreas mobile, carx drift racing 2, minecraft mobile, roblox mobile, download games, android, ios, mods, free games" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Game Mod | Download Top Mobile Games & MODs" />
+  <meta property="og:description" content="Best site for downloading GTA San Andreas, CarX Drift Racing 2, Minecraft, Roblox & more for mobile." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    /* --- نفس التنسيقات اللي عطيتك --- */
+    :root {
+      --primary: #2563eb;
+      --secondary: #fbbf24;
+      --bg: #f4f7fb;
+      --header-bg: #fff;
+      --footer-bg: #1e293b;
+      --text: #222;
+      --card: #fff;
+      --radius: 1.2em;
+      --shadow: 0 4px 24px rgba(30,41,59,0.10), 0 1.5px 4px rgba(30,41,59,0.08);
+      --transition: 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    html, body {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--header-bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+      padding: .8em 0;
+      transition: background 0.2s;
+      animation: fade-in-down 1s;
+    }
+    @keyframes fade-in-down {
+      0% { transform: translateY(-40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .container {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: var(--primary);
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+    }
+    .logo span {
+      color: var(--secondary);
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-left: 0.1em;
+    }
+    nav {
+      float: right;
+      margin-top: .6em;
+    }
+    nav a {
+      margin-left: 1.5em;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 3em 1em 2em 1em;
+      background: linear-gradient(90deg, #fbbf24 5%, #fff 99%);
+      border-radius: var(--radius);
+      margin: 2em auto 2em auto;
+      animation: fade-in 1.2s;
+    }
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .hero-title {
+      font-size: 2.5em;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5em;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 8px #fbbf2430;
+    }
+    /* GAMES GRID */
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.6em;
+      margin: 2.5em 0;
+      animation: fade-in 1.2s;
+    }
+    @media (min-width: 700px) {
+      .games-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .game-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1em 1em 1.5em 1em;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+      animation: pop-in .7s;
+      position: relative;
+      overflow: hidden;
+    }
+    .game-card:hover {
+      transform: translateY(-8px) scale(1.04);
+      box-shadow: 0 8px 32px rgba(37,99,235,0.15), var(--shadow);
+    }
+    @keyframes pop-in {
+      0% { opacity: 0; transform: scale(0.8);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+    .game-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 2px 10px #2563eb20;
+      margin-bottom: 1em;
+      background: #e5e7eb;
+      transition: filter .3s;
+      animation: bounce-in 1.1s;
+      display: block;
+      min-width: 0;
+      min-height: 0;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .game-card:hover .game-img {
+      filter: brightness(1.07) saturate(1.2);
+    }
+    @keyframes bounce-in {
+      0% { transform: scale(0.7);}
+      80% { transform: scale(1.08);}
+      100% { transform: scale(1);}
+    }
+    .game-title {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.4em;
+      text-align: center;
+      min-height: 2.6em;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+    }
+    .game-desc {
+      color: #555d;
+      font-size: .97em;
+      text-align: center;
+      min-height: 3.2em;
+    }
+    .download-btn {
+      margin-top: 1.4em;
+      padding: .7em 1.7em;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 10px #2563eb30;
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+      animation: pulse 2.5s infinite;
+      outline: none;
+      position: absolute;
+      bottom: 1em;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .download-btn:hover {
+      background: var(--secondary);
+      color: #111;
+      transform: scale(1.07) translateX(-50%);
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 #fbbf2455;}
+      70% { box-shadow: 0 0 0 15px transparent;}
+    }
+    /* FOOTER */
+    footer {
+      background: var(--footer-bg);
+      color: #fff;
+      text-align: center;
+      padding: 2.2em 0 1em 0;
+      margin-top: 3em;
+      border-radius: var(--radius) var(--radius) 0 0;
+      font-size: 1.05em;
+      animation: fade-in-up 1.2s;
+    }
+    @keyframes fade-in-up {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .footer-links {
+      margin-bottom: 1.2em;
+    }
+    .footer-links a {
+      color: var(--secondary);
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    .footer-links a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .copyright {
+      font-size: .97em;
+      color: #e5e7eb;
+      opacity: 0.85;
+    }
+    @media (max-width: 500px) {
+      .hero-title { font-size: 1.6em;}
+      .container { width: 99%; }
+      .games-grid { gap: 1em;}
+      .game-title { font-size: 1em;}
+      .game-desc { font-size: .92em;}
+      .game-img { border-radius: 15px; }
+    }
+  </style>
+  <!-- SEO Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Game Mod",
+    "url": "https://yourdomain.com/",
+    "description": "Download GTA San Andreas Mobile, CarX Drift Racing 2, Minecraft, Roblox and more for Android & iOS. Fast, safe, and 100% free!"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/40/2563eb/controller.png" alt="Game Logo" style="border-radius:12px;" />
+        Game <span>Mod</span>
+      </div>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <section class="hero" id="home">
+      <h1 class="hero-title">Game Mod - Download Top Mobile Games & MODs</h1>
+      <a href="#games" class="download-btn" style="position:unset;animation:none;margin-top:1.5em;">Browse Games</a>
+    </section>
+    <section id="games">
+      <div class="games-grid">
+        <!-- GTA San Andreas Mobile -->
+        <div class="game-card">
+          <img class="game-img" src="https://logowik.com/content/uploads/images/grand-theft-auto-san-andreas4401.jpg" alt="GTA San Andreas Mobile" />
+          <div class="game-title">GTA San Andreas Mobile</div>
+          <div class="game-desc">Experience the legendary open-world action game, now optimized for mobile. Explore Los Santos, complete missions, and enjoy MODs!</div>
+          <button class="download-btn" onclick="startLocker('4520513', '96f21')">Download</button>
+        </div>
+                <!-- NARUTO: Ulimited ninja STORM-->
+        <div class="game-card">
+          <img class="game-img" src="https://an1.com/uploads/posts/2024-10/1728237788_naruto-ultimate-ninja-storm.png" alt="GTA San Andreas Mobile" />
+          <div class="game-title">NARUTO: Ulimited ninja STORM</div>
+          <div class="game-desc"> is a fast-paced fighting game with epic anime battles.
+</div>
+          <button class="download-btn" onclick="startLocker('4551310', '915d6')">Download</button>
+        </div>
+
+        <!-- the amazing spider man 2-->
+        <div class="game-card">
+          <img class="game-img" src="https://imgcdn.latestmodapks.com/api/resize?url=https://www.latestmodapks.com/wp-content/uploads/2023/07/Spider-Man-2-logo.jpeg&width=160" alt="CarX Drift Racing 2" />
+          <div class="game-title">the amazing spider man 2</div>
+          <div class="game-desc"> An open-world action game where you play as Spider-Man and fight crime in New York City</div>
+          <button class="download-btn" onclick="startLocker('4553293', '2835f')">Download</button>
+        </div>
+        <!-- Car Parking Multiplayer 2 -->
+        <div class="game-card">
+          <img class="game-img" src="https://img.tapimg.net/market/images/b74100a5b77452eb4bcb112935ffc9c3.jpg/appicon?t=1" alt="Car Parking Multiplayer 2" />
+          <div class="game-title">Car Parking Multiplayer 2</div>
+          <div class="game-desc">Car Parking Multiplayer 2 is an open-world driving simulator that offers realistic car physics and multiplayer mode. Players can park, drift, and explore freely while customizing cars and interacting with others. The game features detailed environments, police mode, and real-time voice chat for a fun social experience.</div>
+          <button class="download-btn" onclick="startLocker('4524847', '6a092')">Download</button>
+        </div>
+        <!-- REMATCH MOBILE -->
+        <div class="game-card">
+          <img class="game-img" src="https://img.tapimg.net/market/images/FoA6jvZOPnV4pgextzvuoS9hEH_I.jpg/appicon?t=1" alt="Rematch Mobile" />
+          <div class="game-title">REMATCH MOBILE</div>
+          <div class="game-desc">A fast-paced, skill-based 3v3 football game where each player controls one character, focusing on teamwork, precision, and no pay-to-win mechanics.</div>
+          <button class="download-btn" onclick="startLocker('4528314', '2471b')">Download</button>
+        </div>
+        <!-- Minecraft Mobile -->
+        <div class="game-card">
+          <img class="game-img" src="https://images.seeklogo.com/logo-png/24/1/minecraft-logo-png_seeklogo-248451.png" alt="Minecraft Mobile" />
+          <div class="game-title">Minecraft Mobile</div>
+          <div class="game-desc">Create, explore, and survive in your own blocky world. Enjoy unlimited creativity with mods and multiplayer.</div>
+          <button class="download-btn" onclick="startLocker('4520519', '8fe2a')">Download</button>
+        </div>
+        <!-- Roblox Mobile -->
+        <div class="game-card">
+          <img class="game-img" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Roblox Mobile" />
+          <div class="game-title">Roblox Mobile</div>
+          <div class="game-desc">Play, create, and share games in a massive online universe. Try MODs for even more fun and custom experiences!</div>
+          <button class="download-btn" onclick="startLocker('4520521', '9c47a')">Download</button>
+        </div>
+        <!-- 8 Ball Pool Mobile -->
+<div class="game-card">
+  <img class="game-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/8_Ball_Pool_cover.jpg/250px-8_Ball_Pool_cover.jpg" alt="8 Ball Pool Mobile" />
+  <div class="game-title">8 Ball Pool Mobile</div>
+  <div class="game-desc">Play the world’s #1 pool game on your phone! Challenge friends, improve your skills, and enjoy unlimited fun and competition.</div>
+  <button class="download-btn" onclick="startLocker('4532293', '7db11')">Download</button>
+</div>
+        <!-- ASSETTO CORSA MOBILE-->
+<div class="game-card">
+  <img class="game-img" src="https://sm.ign.com/ign_gr/cover/a/assetto-co/assetto-corsa_zndh.jpg" alt="8 Ball Pool Mobile" />
+  <div class="game-title">ASSETTO CORSA MOBILE</div>
+  <div class="game-desc">Realistic racing simulation with smooth controls on your phone.
+</div>
+  <button class="download-btn" onclick="startLocker('4531422', 'a23ea')">Download</button>
+</div>
+<!-- Subway Surfers -->
+<div class="game-card">
+  <img class="game-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4CBOcGFSE8US6FSWbi89AbxcuYyBd7JyIAA&s" alt="Subway Surfers" />
+  <div class="game-title">Subway Surfers</div>
+  <div class="game-desc">The world-famous endless running game! Dash, dodge, and surf your way through the city with MODs for unlimited fun.</div>
+  <button class="download-btn" onclick="startLocker('4519958', 'e4954')">Download</button>
+</div>
+        <!-- Hollow Knight: Silksong-->
+<div class="game-card">
+  <img class="game-img" src="https://e.snmc.io/lk/f/x/0f61fb1d3c35a8809057654af34a81f6/13693238" alt="Hollow Knight: Silksong" />
+  <div class="game-title">Hollow Knight: Silksong MOBILE</div>
+  <div class="game-desc">Hollow Knight: Silksong is a 2D action-adventure game starring Hornet.
+</div>
+  <button class="download-btn" onclick="startLocker('4519953', '539e7')">Download</button>
+</div>
+      </div>
+    </section>
+    <section id="about" style="margin: 3em 0 0 0; text-align:center;">
+      <h2 style="color:var(--primary);font-size:1.4em;">About Game Mod</h2>
+      <p style="color:#444c;max-width:600px;margin:1em auto 0 auto;font-size:1.05em;">
+        Game Mod is your #1 destination for safe, fast, and up-to-date mobile game downloads and mods. We handpick the best games for Android & iOS, including legendary titles like GTA San Andreas, CarX Drift Racing 2, Minecraft, and Roblox. All downloads are direct and safe. Enjoy a modern, mobile-first experience!
+      </p>
+    </section>
+  </div>
+  <footer id="footer">
+    <div class="footer-links">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="mailto:support@yourdomain.com">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="copyright">
+      &copy; 2025 Game Mod. All rights reserved.
+    </div>
+  </footer>
+  <!-- Locker script loader & starter -->
+  <script>
+    var lockerScriptLoaded = false;
+
+    function loadLockerScript(callback) {
+      if(lockerScriptLoaded){
+        callback();
+        return;
+      }
+      var script = document.createElement('script');
+      script.src = "https://dfmpe7igjx4jo.cloudfront.net/d5cb707.js";
+      script.onload = function(){
+        lockerScriptLoaded = true;
+        callback();
+      };
+      document.head.appendChild(script);
+    }
+
+    function startLocker(it, key){
+      window.UjGbf_BDr_rzxHzc = { it: Number(it), key: key };
+      loadLockerScript(function(){
+        if(typeof _kt === "function"){
+          _kt();
+        } else {
+          alert("Locker script is not ready yet.");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
